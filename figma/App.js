@@ -8,6 +8,7 @@ import {
   Image,
   TextInput,
 } from "react-native";
+import { Button } from "react-native-elements";
 
 export default function App() {
   return (
@@ -34,8 +35,28 @@ export default function App() {
         <Text> 14 task today </Text>
       </View>
 
-      <View>
+      <View style={styles.bar}>
         <SearchBar />
+
+        <Image source={require("./assets/Filter.png")} />
+      </View>
+      <View>
+        <Text style={{ fontSize: 24, fontWeight: "bold", marginTop: 25 }}>
+          Categories
+        </Text>
+      </View>
+
+      <View style={styles.workr}>
+        <View style={{}}>
+          <Text> Study </Text>
+          <Text> 12 tasks</Text>
+          <Image source={require("./assets/photo_2024-05-31_08-25-28.jpg")} />
+        </View>
+        <View>
+          <Text> Study</Text>
+          <Text> 12 tasks</Text>
+          <Image source={require("./assets/photo_2024-05-31_08-22-06.jpg")} />
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -49,6 +70,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     flexDirection: "row",
     alignItems: "center",
+    marginLeft: 10,
+    marginRight: 10,
   },
   imgcont: {
     backgroundColor: "#fff",
@@ -58,5 +81,19 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 70 / 2,
+  },
+  bar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    alignContent: "center",
+    marginRight: 10,
+  },
+  workr: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 10,
   },
 });
