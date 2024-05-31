@@ -1,6 +1,13 @@
 import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, StyleSheet, Text, View, Image } from "react-native";
-import { SearchBar } from "react-native-elements";
+import SearchBar from "./components/searchbar";
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TextInput,
+} from "react-native";
 
 export default function App() {
   return (
@@ -28,10 +35,7 @@ export default function App() {
       </View>
 
       <View>
-        <SearchBar
-          style={{ backgroundColor: "#fff" }}
-          placeholder="Type Here..."
-        />
+        <SearchBar />
       </View>
     </SafeAreaView>
   );
@@ -51,8 +55,8 @@ const styles = StyleSheet.create({
     borderRadius: "50/2",
   },
   imgg: {
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
     borderRadius: 70 / 2,
   },
 });
