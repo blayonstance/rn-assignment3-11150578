@@ -7,10 +7,10 @@ const SearchBar = () => {
       <TextInput
         style={{
           height: 40,
-          width: 288,
+          width: 310,
           borderColor: "#fff",
           borderWidth: 2,
-          borderRadius: "50 / 2",
+          borderRadius: 25,
           backgroundColor: "#fff",
         }}
         placeholder="🔍  search"
